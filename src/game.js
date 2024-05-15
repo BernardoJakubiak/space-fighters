@@ -17,7 +17,11 @@ const enemies = [enemyA];
 
 function draw(ctx) {
     ctx.clearRect(0, 0, 400, 400);
+
+    // Desenhar player
     ctx.drawImage(player.image, player.x, player.y);
+
+    // Desenhar inimigos
     if (enemies.length > 0) {
         for (let e of enemies) {
             ctx.drawImage(e.image, e.x, e.y);
